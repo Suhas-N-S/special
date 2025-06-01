@@ -28,13 +28,13 @@ body, html {
 
 
 .flip-container {
-  perspective: 1200px;
-  width: 90%;
-  max-width: 350px;
-  height: 230px;
+  perspective: 120 1200px;
+  width: 70%; /* Reduced from 90% */
+  max-width: 280px; /* Reduced from 350px */
+  height: 180px; /* Reduced from 230px */
   margin: 0 auto;
   position: absolute;
-  top: 50%;
+  top: calc(70% + 15px); /* Moved further down from 50% to 70% */
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -76,11 +76,10 @@ body, html {
 
 .front {
   background: rgba(255, 255, 255, 0.25);
-  font-size: 1.25rem;
+  font-size: 1rem; /* Reduced from 1.25rem */
   color: #ff4d79;
   animation: pulse 2s infinite;
 }
-
 
 .back {
   transform: rotateY(180deg);
@@ -150,7 +149,7 @@ body, html {
 }
 
 .heartbeat-icon {
-  font-size: 3rem;
+  font-size: 2.5rem; /* Reduced from 3rem */
   animation: heartbeat 1.4s infinite ease-in-out;
 }
 
